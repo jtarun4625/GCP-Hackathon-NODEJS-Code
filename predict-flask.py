@@ -14,6 +14,7 @@ Created on Sat Mar 10 21:02:07 2018
 from flask import Flask
 import tensorflow as tf
 from flask import request
+from flask import jsonify
 
 app = Flask(__name__)
 
