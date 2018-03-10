@@ -43,7 +43,7 @@ def hello_world():
     op_to_restore = graph.get_tensor_by_name("op_to_restore:0")
     
     test = str(sess.run(op_to_restore,feed_dict))
-    response = Flask.jsonify({'state': test})
+    response = jsonify({'state': test})
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
